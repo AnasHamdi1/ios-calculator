@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- favicon -->
+    <link rel="icon" type="image/x-icon" href="./images/favicon-dark.svg" />
+
+    <!-- poppins font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <!-- main css file -->
+    <link rel="stylesheet" href="./style.css" />
+    <title>IOS Calculator</title>
+  </head>
+  <body>
+    <noscript>
+      <h2
+        style="
+          background-color: #bbb;
+          border: 0 solid #ffffff;
+          border-bottom-width: 4px;
+          border-radius: 0 0 8px 8px;
+          padding: 15px;
+        "
+      >
+        Enable Javascript to enhance your browsing experience on our site!
+      </h2>
+    </noscript>
+
+    <main class="main">
+      <div class="calc-wrapper">
+        <section class="calc dark">
+          <header class="calc-header">
+            <div class="mode-change">
+              <a href="#light-mode" class="light-mode">
+                <svg
+                  class="icon brightness_high"
+                  viewBox="0 0 16 16"
+                  width="22"
+                >
+                  <path
+                    d="M8 5.344q1.094 0 1.875 0.781t0.781 1.875-0.781 1.875-1.875 0.781-1.875-0.781-0.781-1.875 0.781-1.875 1.875-0.781zM8 12q1.656 0 2.828-1.172t1.172-2.828-1.172-2.828-2.828-1.172-2.828 1.172-1.172 2.828 1.172 2.828 2.828 1.172zM13.344 5.781l2.188 2.219-2.188 2.219v3.125h-3.125l-2.219 2.188-2.219-2.188h-3.125v-3.125l-2.188-2.219 2.188-2.219v-3.125h3.125l2.219-2.188 2.219 2.188h3.125v3.125z"
+                  ></path>
+                </svg>
+              </a>
+              <a href="#dark-mode" class="dark-mode">
+                <svg
+                  class="icon brightness_medium"
+                  viewBox="0 0 16 16"
+                  width="22"
+                >
+                  <path
+                    d="M8 12q1.656 0 2.828-1.172t1.172-2.828-1.172-2.828-2.828-1.172v8zM13.344 10.219v3.125h-3.125l-2.219 2.188-2.219-2.188h-3.125v-3.125l-2.188-2.219 2.188-2.219v-3.125h3.125l2.219-2.188 2.219 2.188h3.125v3.125l2.188 2.219z"
+                  ></path>
+                </svg>
+              </a>
+            </div>
+          </header>
+          <section class="calc-output">
+            <div class="result-holder">
+              <h2 class="result" tabindex="0">0</h2>
+            </div>
+          </section>
+          <section class="calc-input">
+            <button class="sub-ops" id="ac">AC</button>
+            <button class="sub-ops" id="toggle-sign">+/-</button>
+            <button class="sub-ops" id="percentage">%</button>
+            <button class="main-ops" id="division">÷</button>
+
+            <button class="number" data-num="7">7</button>
+            <button class="number" data-num="8">8</button>
+            <button class="number" data-num="9">9</button>
+            <button class="main-ops" id="multiplication">×</button>
+
+            <button class="number" data-num="4">4</button>
+            <button class="number" data-num="5">5</button>
+            <button class="number" data-num="6">6</button>
+            <button class="main-ops" id="subtraction">-</button>
+
+            <button class="number" data-num="1">1</button>
+            <button class="number" data-num="2">2</button>
+            <button class="number" data-num="3">3</button>
+            <button class="main-ops" id="addition">+</button>
+
+            <button class="number zero" data-num="0">0</button>
+            <button class="number point" data-num=".">.</button>
+            <button class="main-ops" id="equals">=</button>
+          </section>
+        </section>
+      </div>
+    </main>
+    <script src="main.js" type="module"></script>
+    <script src="mode-system.js"></script>
+  </body>
+</html>
